@@ -61,6 +61,7 @@ p {
     background: var(--dark-blue);
     border-radius: 8px 0 0 8px;
     padding-top: 50px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,6 +139,18 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.cv_languages {
+    width: 80%;
+    font-size: 13px;
+    margin-top: var(--space-s);
+    padding-bottom: var(--space-xs);
+    opacity: .9;
+    border-bottom: 5px solid var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cv_right {
