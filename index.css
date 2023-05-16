@@ -1,8 +1,9 @@
 :root {
     /* Colors */
+    --white: #fff;
+    --black: #000;
     --gray: #f6f6f6;
     --dark-gray: #f6f6f69a;
-    --white: #fff;
     --dark-blue: #012a52;
 
     /* Spaces */
@@ -11,6 +12,7 @@
     --space-m: 15px;
     --space-l: 20px;
     --space-xl: 30px;
+    --space-xxl: 50px;
 }
 
 *, html {
@@ -30,16 +32,27 @@ h1, h2, h3, h4, h5, h6, div, span, p {
     margin-block-start: 0;
     margin-block-end: 0;
     height: auto;
+    line-height: 1.2rem;
 }
 
 p {
     width: auto;
 }
 
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+pre {
+    margin: 0;
+    white-space: normal;
+}
+
 .cv_container {
     width: 100%;
     height: 100%;
-    padding: 50px 0;
+    padding: var(--space-xxl) 0;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -57,10 +70,9 @@ p {
 
 .cv_left {
     width: 30%;
-    height: 100%;
     background: var(--dark-blue);
     border-radius: 8px 0 0 8px;
-    padding-top: 50px;
+    padding-top: var(--space-xl);
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -156,4 +168,75 @@ p {
 .cv_right {
     width: 70%;
     height: 100%;
+    padding: var(--space-xl) var(--space-l) var(--space-l) var(--space-l);
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+}
+
+.cv_right_profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.cv_right_profile h2 {
+    margin-bottom: var(--space-s);
+}
+
+.cv_right_profile p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cv_right_experience {
+    margin-top: var(--space-l);
+    display: flex;
+    flex-direction: column;
+}
+
+.cv_right_experience h2 {
+    margin-bottom: var(--space-s);
+}
+
+.cv_company {
+    display: flex;
+    flex-direction: column;
+}
+
+.cv_company h4 {
+    margin-bottom: var(--space-xs);
+}
+
+.cv_company p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cv_company span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: var(--space-xs);
+}
+
+.cv_company ul li {
+    font-size: 13px;
+}
+
+.cv_right_education {
+    margin-top: var(--space-l);
+    display: flex;
+    flex-direction: column;
+}
+
+.cv_right_education h2 {
+    margin-bottom: var(--space-s); 
+}
+
+.cv_right_education p {
+    font-size: 12px;
+    font-weight: 700;   
+}
+
+.cv_mt_5 {
+    margin-top: var(--space-xs);
 }
